@@ -1,11 +1,11 @@
-module.exports.transform = function (args) {
-    const {Transform} = require('stream');
-    return new Transform({
-        readableObjectMode: true,
-        writeableObjectMode: true,
-        transform(chunk, encoding, callback) {
-            this.push(args.callback(chunk, args));
-            callback();
-        }
-    });
+class Transformer {
+    constructor(args) {
+        Object.assign(this, args);
+    }
+
+    transform(obj) {
+        return this.callback(obj, this);
+    }
 }
+
+module.exports.Transformer = Transformer;
