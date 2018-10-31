@@ -1,6 +1,6 @@
 class Transformer {
     constructor(args) {
-        Object.assign(this, args);
+        Object.assign(this, this, args);
     }
 
     transform(obj) {
