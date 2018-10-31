@@ -1,6 +1,6 @@
 {
   "name": "data-etl-generic-transformer",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Generic transformer for data-etl",
   "main": "index.js",
   "scripts": {
